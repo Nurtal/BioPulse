@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {"id": "A", "group": "input"},
+    {"id": "B", "group": "intermediate"},
+    {"id": "C", "group": "output"}
+  ],
+  "edges": [
+    {"source": "A", "target": "B", "type": "activation"},
+    {"source": "A", "target": "C", "type": "activation"},
+    {"source": "B", "target": "C", "type": "activation"}
+  ]
+}

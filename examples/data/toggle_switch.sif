@@ -1,0 +1,3 @@
+# Toggle switch: A and B mutually inhibit each other
+A -1 B
+B -1 A

@@ -1,0 +1,23 @@
+{
+  "graph": {
+    "nodes": [
+      {"id": "IL6",   "group": "ligand"},
+      {"id": "JAK1",  "group": "kinase"},
+      {"id": "STAT3", "group": "transcription_factor"},
+      {"id": "SOCS3", "group": "regulator"}
+    ],
+    "edges": [
+      {"source": "IL6",   "target": "JAK1",  "type": "activation"},
+      {"source": "JAK1",  "target": "STAT3", "type": "activation"},
+      {"source": "STAT3", "target": "SOCS3", "type": "activation"},
+      {"source": "SOCS3", "target": "JAK1",  "type": "inhibition"}
+    ]
+  },
+  "events": [
+    {"t": 0.0, "node": "IL6",   "state": 1},
+    {"t": 0.5, "node": "JAK1",  "state": 1},
+    {"t": 1.0, "node": "STAT3", "state": 1},
+    {"t": 1.5, "node": "SOCS3", "state": 1},
+    {"t": 2.0, "node": "JAK1",  "state": 0}
+  ]
+}

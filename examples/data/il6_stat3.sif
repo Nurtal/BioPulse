@@ -1,0 +1,7 @@
+# IL-6 / STAT3 signalling cascade (simplified)
+# activation edges
+IL6 1 JAK1
+JAK1 1 STAT3
+STAT3 1 SOCS3
+# inhibition edges
+SOCS3 -1 JAK1

@@ -1,0 +1,114 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "IL6",
+        "group": "cytokine"
+      },
+      {
+        "id": "JAK1",
+        "group": "kinase"
+      },
+      {
+        "id": "STAT3",
+        "group": "transcription_factor"
+      },
+      {
+        "id": "MYC",
+        "group": "target_gene"
+      },
+      {
+        "id": "BCL2",
+        "group": "target_gene"
+      },
+      {
+        "id": "SOCS3",
+        "group": "feedback"
+      }
+    ],
+    "edges": [
+      {
+        "source": "IL6",
+        "target": "JAK1",
+        "type": "activation"
+      },
+      {
+        "source": "JAK1",
+        "target": "STAT3",
+        "type": "activation"
+      },
+      {
+        "source": "STAT3",
+        "target": "MYC",
+        "type": "activation"
+      },
+      {
+        "source": "STAT3",
+        "target": "BCL2",
+        "type": "activation"
+      },
+      {
+        "source": "STAT3",
+        "target": "SOCS3",
+        "type": "activation"
+      },
+      {
+        "source": "SOCS3",
+        "target": "JAK1",
+        "type": "inhibition"
+      }
+    ]
+  },
+  "events": [
+    {
+      "t": 0.0,
+      "node": "IL6",
+      "state": 1
+    },
+    {
+      "t": 0.4,
+      "node": "JAK1",
+      "state": 1
+    },
+    {
+      "t": 0.9,
+      "node": "STAT3",
+      "state": 1
+    },
+    {
+      "t": 1.3,
+      "node": "MYC",
+      "state": 1
+    },
+    {
+      "t": 1.3,
+      "node": "BCL2",
+      "state": 1
+    },
+    {
+      "t": 1.7,
+      "node": "SOCS3",
+      "state": 1
+    },
+    {
+      "t": 2.2,
+      "node": "JAK1",
+      "state": 0
+    },
+    {
+      "t": 2.6,
+      "node": "STAT3",
+      "state": 0
+    },
+    {
+      "t": 3.0,
+      "node": "MYC",
+      "state": 0
+    },
+    {
+      "t": 3.0,
+      "node": "BCL2",
+      "state": 0
+    }
+  ]
+}

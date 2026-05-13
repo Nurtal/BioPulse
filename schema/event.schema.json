@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "description": "A single state-change event at time `t`.",
+  "properties": {
+    "t": {
+      "minimum": 0,
+      "title": "T",
+      "type": "number"
+    },
+    "node": {
+      "minLength": 1,
+      "title": "Node",
+      "type": "string"
+    },
+    "state": {
+      "title": "State",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "t",
+    "node",
+    "state"
+  ],
+  "title": "Event",
+  "type": "object"
+}

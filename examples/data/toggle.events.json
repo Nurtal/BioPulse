@@ -1,0 +1,8 @@
+{
+  "events": [
+    {"t": 0.0, "node": "X", "state": 1},
+    {"t": 1.0, "node": "Y", "state": 0},
+    {"t": 2.0, "node": "X", "state": 0},
+    {"t": 3.0, "node": "Y", "state": 1}
+  ]
+}

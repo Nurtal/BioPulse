@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GINsim-model id="toggle_switch" nodeorder="A B">
+  <nodelist>
+    <node id="A" maxvalue="1" nodeclass="activator"/>
+    <node id="B" maxvalue="1" nodeclass="repressor"/>
+  </nodelist>
+  <edgelist>
+    <edge from="A" to="B" minvalue="1" sign="negative"/>
+    <edge from="B" to="A" minvalue="1" sign="negative"/>
+  </edgelist>
+</GINsim-model>
